@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace src
 {
-    internal class StudentStore
+    internal interface IHasId
     {
     }
 }
