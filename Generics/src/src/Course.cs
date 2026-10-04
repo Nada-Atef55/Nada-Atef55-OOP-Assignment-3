@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+namespace src;
 
-namespace src
+public class Course : IHasId
 {
-    internal class Course
+    public Course(int id, string title, decimal price)
     {
+        Id = id;
+        Title = title;
+        Price = price;
     }
+
+    public int Id { get; }
+    public string Title { get; }
+    public decimal Price { get; }
 }

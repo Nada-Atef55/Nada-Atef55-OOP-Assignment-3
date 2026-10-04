@@ -14,7 +14,7 @@ public class Store<T>
         }
         catch(Exception ex)
         {
-            Console.WriteLine(ex.Message);
+            throw;
         }
         
     }
@@ -24,6 +24,6 @@ public class Store<T>
         _history.TryGetValue(id, out T? item);
         return item;
     }
-    public IReadOnlyDictionary<int, T> GetAll() => _history;
+    public Dictionary<int, T> GetAll() => _history;
     public void Remove(int id) => _history.Remove(id);
 }
