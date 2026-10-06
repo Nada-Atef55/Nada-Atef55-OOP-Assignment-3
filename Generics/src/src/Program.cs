@@ -50,7 +50,7 @@ internal class Program
 
         var CourseList = new List<Course> 
                     { new(1, "OOP", 500m),
-                    new(2, "C#", 200m) };
+                      new(2, "C#", 200m) };
 
         Console.WriteLine(CourseList.FindById(1)?.Title);
 
